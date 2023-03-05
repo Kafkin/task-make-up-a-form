@@ -1,0 +1,21 @@
+.page{
+  background: map-get( $colors, back );
+  width: 100%; height: 100vh;
+
+  &::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+
+  &_home{
+    padding: 20px 113px 0 113px;
+  }
+
+  &__title{
+    color: map-get( $colors, font );
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 25px;
+  }
+}

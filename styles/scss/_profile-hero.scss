@@ -1,0 +1,73 @@
+.profile-hero{
+  width: 360px; height: max-content;
+  padding: 20px 20px 0px 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  float: left;
+
+  &__info{
+    display: flex; align-items: center; gap: 10px;
+    width: 100%; height: max-content;
+    padding: 10px 0px 10px 11px;
+    background: #F9F9FA;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  &__icon{
+    position: relative;
+  }
+
+  &__group{
+    display: flex; align-items: flex-start; flex-direction: column;
+    position: relative;
+  }
+
+  &__title{
+    font-weight: 500px;
+    color: #1C294D;
+    font-size: 16px;
+  }
+  
+  &__description{
+    color: rgba(28, 41, 77, 0.5);
+    font-size: 14px;
+  }
+
+  &__nav{
+    display: flex; align-items: flex-start; flex-direction: column;
+  }
+
+  &__link{
+    border: 1px solid rgba(42, 61, 72, 0.15); 
+    width: 100%; height: max-content;
+    border-left: 0; border-right: 0;
+    position: relative;
+    color: #1C294D;
+    font-size: 14px;
+    padding: 20px 0;
+
+    &::before{
+      position: absolute; top: 0; left: 0;
+      transform: translate( -20px );
+      width: 5px; height: 100%;
+      background: #FC6E1D;
+      border-radius: 5px;
+      display: none;
+      content: '';
+    }
+
+    &_active{
+      color: #FC6E1D;
+
+      &::before{
+        display: block;
+      }
+    }
+
+    &:last-of-type{
+      color: #FF3347;
+      border: none;
+    }
+  }
+}
